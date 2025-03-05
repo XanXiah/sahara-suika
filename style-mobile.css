@@ -133,7 +133,10 @@ p.footer {
         background-position: 60px 0;
     }
 }
-
+#centeredImage {
+    width: 425px
+    height: auto
+}
 #canvasDiv {
 /*         display: flex; */
 /*         align-items: center; */
@@ -154,6 +157,10 @@ p.footer {
     @media (max-height: 999px) {
         #canvasDiv {
             height: 100vh;
+        }
+        #centeredImage {
+            width: 100%
+            height: min(calc(100vw * 0.23875), 100vh)
         }
     }
 
